@@ -1,0 +1,52 @@
+<style>
+    .popuplayout {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        opacity: 70%;
+        display: none;
+        z-index: 2;
+    }
+
+    .popupbox {
+        width: 300px;
+        position: absolute;
+        display: none;
+        background-color: paleturquoise;
+        color: black;
+        padding: 10px;
+        z-index: 3;
+        border-radius: 10px;
+        left: 40%;
+        top: 30%;
+    }
+</style>
+
+<button onclick="show()">Show</button>
+<div class="popuplayout"></div>
+
+<div class="popupbox">
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit placeat molestias sapiente, nostrum exercitationem
+        magnam praesentium eum expedita incidunt animi similique. Impedit error ea quas sunt officia iste nam sit.</P>
+    <button onclick="closebox()">close</button>
+</div>
+
+<script>
+    var pplayout = document.querySelector(".popuplayout")
+    var ppbox = document.querySelector(".popupbox")
+    function show() {
+        pplayout.style.display = "block"
+        ppbox.style.display = "block"
+    }
+    function closebox() {
+        pplayout.style.display = "none"
+        ppbox.style.display = "none"
+        alert("Boii Boii")
+    }
+
+</script>
+
+
